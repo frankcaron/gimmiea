@@ -18,22 +18,51 @@ require_relative 'helpers'
 
 # Gimmiea Day
 get '/weekday' do
-    #return today
+    case Time.now.wday
+    when 0
+      p = "Sunday"
+    when 1
+      p = "Monday"
+    when 2
+      p = "Tuesday"
+    when 3
+      p = "Wednesday"
+    when 4
+      p = "Thursday"
+    when 5
+      p = "Friday"
+    when 6
+      p = "Saturday"
+    else
+      p = "Funday"
+    end
+    m = { :day => p }
+    return JSON.pretty_generate(m)
 end
 
 # Giimmiea Date
 get '/date' do
     #return today
+    m = { :date => Time.now }
+    return JSON.pretty_generate(m) 
 end
 
 # Gimmiea Token
 get '/token' do
-    #return today
+    m = { :token => SecureRandom.urlsafe_base64(nil, false) }
+    return JSON.pretty_generate(m) 
+end
+
+# Gimmiea Nonce
+get '/nonce' do
+    m = { :nonce => (0...8).map { (65 + rand(26)).chr }.join }
+    return JSON.pretty_generate(m) 
 end
 
 # Gimmiea Password
 get '/password' do
-    #return today
+    m = { :password => (0...16).map { (65 + rand(54)).chr }.join }
+    return JSON.pretty_generate(m) 
 end
 
 # Gimmiea Slogan
