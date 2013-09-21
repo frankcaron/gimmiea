@@ -23,7 +23,7 @@ def print_routes
     # Use Sinatra advanced routes
     # to build out a hash based on the routes
     Sinatra::Application.each_route do |route|
-        unless route.path.eql? "/"
+        unless route.path.eql? "/" or route.path.eql? "/*"
             h[route.path.split("/")[1]] = request.base_url + route.path 
         end
     end
@@ -35,16 +35,16 @@ end
 
 # This helper pics a random catch phrase.
 def pick_catchphrase
-    return File.readlines("catchphrases.txt").sample.tr("\n","")
+    return File.readlines("catchphrases.txt").sample.tr("\n",)
 end
 
 # This helper pics a random slogan.
 def pick_slogan
-    return File.readlines("slogans.txt").sample.tr("\n","")
+    return File.readlines("slogans.txt").sample.tr("\n",)
 end
 
 # This helper pics a random question for reset password requests.
 
 def pick_question
-    return File.readlines("questions.txt").sample.tr("\n","")
+    return File.readlines("questions.txt").sample.tr("\n",)
 end
