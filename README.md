@@ -13,7 +13,7 @@ Gimmiea is written in Ruby and uses Sinatra and Thin. It is currently deployed o
 
 Written with love by Frank Caron
 
-frank@frankcaron.com
+frank@frankcaron.com  
 http://www.frankcaron.com
 
 ### Contributions and Pull Request

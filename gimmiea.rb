@@ -80,12 +80,6 @@ get '/question' do
     #return today
 end
 
-# Gimmiea gimmie never gets
-get '/*' do
-  m = { :fourohfour => "Gimmie gimmie never gets. 'Twas no handler for your get." }
-  return JSON.pretty_generate(m)
-end 
-
 # Gimmiea gimmie
 get '/' do
   
@@ -105,4 +99,10 @@ get '/' do
   # Return jsonified route map  
   return JSON.pretty_generate(routes)
 end
+
+# 404 handler
+get '/*' do
+  m = { :fourohfour => "Gimmie gimmie never gets. 'Twas no handler for your get." }
+  return JSON.pretty_generate(m)
+end 
 
