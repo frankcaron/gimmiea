@@ -32,3 +32,19 @@ def print_routes
     return h
 
 end
+
+# This helper pics a random catch phrase.
+def pick_catchphrase
+    return File.readlines("catchphrases.txt").sample.tr("\n","")
+end
+
+# This helper pics a random slogan.
+def pick_slogan
+    return File.readlines("slogans.txt").sample.tr("\n","")
+end
+
+# This helper pics a random question for reset password requests.
+
+def pick_question
+    return File.readlines("questions.txt").sample.tr("\n","")
+end

@@ -67,17 +67,20 @@ end
 
 # Gimmiea Slogan
 get '/slogan' do
-    #return today
+    m = { :catchphrase => pick_slogan }
+    return JSON.pretty_generate(m)
 end
 
 # Gimmiea Catch Phrase
 get '/catchphrase' do
-    #return today
+    m = { :catchphrase => pick_catchphrase }
+    return JSON.pretty_generate(m)
 end
 
 # Gimmiea Forgot Password Question
-get '/question' do
-    #return today
+get '/reset-password-question' do
+    m = { :question => pick_question }
+    return JSON.pretty_generate(m)
 end
 
 # Gimmiea gimmie
