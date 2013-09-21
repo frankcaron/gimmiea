@@ -95,7 +95,7 @@ get '/' do
   # Construct route map
   routes = { 
     :title => 'Gimmiea',
-    :description => 'Gimmiea is an open, public API that allows you to grab or generate simple, routine things quickly and via a RESTful API.',
+    :description => 'Gimmiea is an open, public, free service that allows you to grab or generate simple, routine things quickly and via a RESTful API.',
     :rationale => 'Gimmiea is in service of the ideal of "Voltron", an application which can be built solely from APIs. The app is dead; long live the API.',
     :author => 'frank@frankcaron.com',
     :author_url => 'http://www.frankcaron.com',
