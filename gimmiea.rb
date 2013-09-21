@@ -82,7 +82,7 @@ end
 
 # Gimmiea gimmie never gets
 get '/*' do
-  m = { :404 => "Gimmie gimmie never gets. 'Twas no handler for your get." }
+  m = { :fourohfour => "Gimmie gimmie never gets. 'Twas no handler for your get." }
   return JSON.pretty_generate(m)
 end 
 
