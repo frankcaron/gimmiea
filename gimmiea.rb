@@ -16,6 +16,12 @@ require_relative 'helpers'
 ## Gimmeias
 ## ==========
 
+before '/*' do
+  # Set Content Type
+  content_type :json
+end
+
+
 # Gimmiea Day
 get '/weekday' do
     case Time.now.wday
@@ -36,7 +42,7 @@ get '/weekday' do
     else
       p = "Funday"
     end
-    m = { :day => p }
+    m = { :today => p }
     return JSON.pretty_generate(m)
 end
 
@@ -85,10 +91,7 @@ end
 
 # Gimmiea gimmie
 get '/' do
-  
-  # Set Content Type
-  content_type :json
-  
+
   # Construct route map
   routes = { 
     :title => 'Gimmiea',
