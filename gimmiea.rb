@@ -104,8 +104,8 @@ get '/' do
 end
 
 # 404 handler
-get '/*' do
-  m = { :fourohfour => "Gimmie gimmie never gets. 'Twas no handler for your get." }
-  return JSON.pretty_generate(m)
-end 
+# get '/*' do
+#  m = { :fourohfour => "Gimmie gimmie never gets. 'Twas no handler for your get." }
+#  return JSON.pretty_generate(m)
+# end 
 
