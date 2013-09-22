@@ -62,7 +62,7 @@ end
 # Gimmiea D20 roll
 get '/d20' do
     #return today
-    m = { :dice_face => 1 + rand(6) }
+    m = { :dice_face => 1 + rand(20) }
     return JSON.pretty_generate(m) 
 end
 
