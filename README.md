@@ -16,6 +16,8 @@ Written with love by Frank Caron
 frank@frankcaron.com  
 http://www.frankcaron.com
 
+<a href="http://twitter.com/home/?status=Thanks @frankycaron for making gimmiea: https%3A%2F%2Fgithub.com%2Ffrankcaron%2Fgimmiea"><img src="https://s3.amazonaws.com/github-thank-you-button/thank-you-button.png" alt="Say Thanks" /></a>
+
 ### Contributions and Pull Requests
 
 Welcomed. Loved. Worshipped. Please don't hesistate to complain and commit. 
