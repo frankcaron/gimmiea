@@ -53,6 +53,32 @@ get '/date' do
     return JSON.pretty_generate(m) 
 end
 
+# Gimmiea D6 roll
+get '/d6' do
+    m = { :dice_face => 1 + rand(6) }
+    return JSON.pretty_generate(m) 
+end
+
+# Gimmiea D20 roll
+get '/d20' do
+    #return today
+    m = { :dice_face => 1 + rand(6) }
+    return JSON.pretty_generate(m) 
+end
+
+# Gimmiea random number up to 100 from 0
+get '/number' do
+    m = { :number => rand(100) }
+    return JSON.pretty_generate(m) 
+end
+
+# Gimmiea random number up to upper bound from 0
+get '/number/:upper_bound' do |upper_bound|
+    m = { :number => rand(params[:upper_bound].to_i) }
+    return JSON.pretty_generate(m) 
+end
+
+
 # Gimmiea Token
 get '/token' do
     m = { :token => SecureRandom.urlsafe_base64(nil, false) }
