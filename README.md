@@ -7,7 +7,7 @@ The app is dead; long live the API.
 
 ## Etc
 
-Gimmiea is written in Ruby and uses Sinatra and Thin. It is currently deployed on Heroku.
+Gimmiea is written in many languages and deployed wherever possible.
 
 ### Author Info
 
