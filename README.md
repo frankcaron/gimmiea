@@ -1,7 +1,7 @@
 Gimmiea
 ===========
 
-Gimmiea is an open, public, free service that allows you to grab or generate simple, routine things quickly and via a RESTful API. Gimmiea was created in service of the ideal of "Voltron", an application which can be built solely from APIs. 
+Gimmiea is an open, public, free service that allows you to grab or generate simple, routine things quickly and via a JSON API. Gimmiea was created in service of the ideal of "Voltron", an application which can be built solely from APIs. 
 
 The app is dead; long live the API.
 
